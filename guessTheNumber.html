@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>guessTheNumber</title>
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+
+  <link rel="stylesheet" type="text/css" href="guessTheNumber.css">
+</head>
+<body>
+	<header><h1>Guess the number</h1></header>
+	<main class="game">
+		<div class="game-status game-section">
+			<div class="select-level">
+				<!-- hidden when game play starts -->
+				<label for="selectLevel">Select level</label>
+				<select name="selectLevel">
+					<option value="level1">1-10</option>
+					<option value="level2">1-50</option>
+					<option value="level3">1-100</option>
+				</select>
+				<button class="btn-start-play" autofocus>Play</button>
+			</div>
+			<div class="level-status">
+				<!-- shown when game play starts -->
+				level-status
+			</div>
+			<div class="game-end-area">
+				<!-- shown when game ends -->
+				<div class="game-end-message">game-end-message</div>
+				<button class="btn-start-new-game">Start new game</button>
+			</div>
+		</div>
+
+		<div class="game-playground game-section">
+			<!-- shown when game play starts -->
+			<h2>Познай числото, което съм си намислил, от <span class="range-min"></span> до <span class="range-max"></span></h2>
+			<div class="user-input-area">
+				<label for=""><input type="number" autofocus></label>
+				<button class="btn-guess">Guess</button>
+				<button class="btn-reset-game">Reset Game</button>
+			</div>
+			<div class="play-status">
+				play-status
+			</div>
+		</div>
+
+		<div class="guess-history game-section">
+			<!-- shown on first user guess -->
+			<table>
+				<thead>
+					<tr>
+						<th>Guess</th>
+						<th>Status</th>
+					</tr>
+					</thead>
+					<tbody></tbody>
+			</table>
+		</div>
+	</main>
+
+	<script type="text/javascript" src="guessTheNumber.js"></script>
+</body>
+</html>
