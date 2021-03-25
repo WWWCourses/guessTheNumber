@@ -1,0 +1,39 @@
+body{
+	font-size: 20px;
+	width: 75%;
+	margin: 0 auto;
+	height: 100vh;
+	border:5px solid #999;
+}
+header{
+	height: 20vh;
+	margin: 0;
+	background: #333;
+	color: #CCC;
+}
+header h1{
+	font-size: 2em;
+	margin: 0;
+	padding: 1.3em;
+	/* line-height: 20vh; */
+	/* vertical-align: middle; */
+	text-align: center;
+}
+main{
+	padding: 2em;
+	/* border: 1px solid red; */
+	box-sizing: border-box;
+}
+main .game-section{
+	border:2px solid #999;
+	margin: 1em;
+	padding: 1em;
+}
+.play-status{
+	margin: 1em 0;
+}
+
+/* common classes */
+.hidden{
+	display: none;
+}
